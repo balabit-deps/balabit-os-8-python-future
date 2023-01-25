@@ -1,3 +1,12 @@
+python-future (0.18.2-2ubuntu0.1) focal-security; urgency=medium
+
+  * SECURITY UPDATE: ReDOS through Set-Cookie header
+    - debian/patches/CVE-2022-40899.patch: Fix overlapping \s*
+      regex groups in src/future/backports/http/cookiejar.py. 
+    - CVE-2022-40899
+
+ -- David Fernandez Gonzalez <david.fernandezgonzalez@canonical.com>  Wed, 25 Jan 2023 09:33:14 +0100
+
 python-future (0.18.2-2) unstable; urgency=medium
 
   * Drop python2 support; Closes: #937773
